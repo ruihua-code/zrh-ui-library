@@ -8,6 +8,7 @@ export default defineConfig({
     lib: {
       entry: 'src/index.js',
       name: 'ZrhUiLibrary',
+      formats: ['es'],
       fileName: (format) => `zrh-ui-library.${format}.js`, // 指定打包后文件名
     },
     rollupOptions: {

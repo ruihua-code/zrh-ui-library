@@ -8,6 +8,10 @@ defineProps({
     type: String,
     required: true,
   },
+  type: {
+    type: String,
+    default: 'primary',
+  },
 });
 </script>
 
