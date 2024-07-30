@@ -1,0 +1,19 @@
+<template>
+  <div class="zrh-label">
+    {{ label }}
+  </div>
+</template>
+<script setup>
+defineProps({
+  label: {
+    type: String,
+    required: true,
+  },
+});
+</script>
+<style>
+.zrh-label {
+  color: orange;
+  font-size: 20px;
+}
+</style>
