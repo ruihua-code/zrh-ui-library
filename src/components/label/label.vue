@@ -11,7 +11,7 @@ defineProps({
   },
 });
 </script>
-<style>
+<style lang="scss" scoped>
 .zrh-label {
   color: orange;
   font-size: 20px;

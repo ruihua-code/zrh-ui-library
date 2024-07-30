@@ -15,7 +15,7 @@ defineProps({
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .ui-button {
   padding: 10px 20px;
   border: 1px solid #ccc;
