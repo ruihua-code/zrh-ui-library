@@ -20,5 +20,6 @@ export default defineConfig({
       },
     },
     cssCodeSplit: true,
+    assetsDir: 'dist',
   },
 });

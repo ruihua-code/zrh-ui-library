@@ -4,7 +4,7 @@
   "type": "module",
   "main": "./dist/zrh-ui-library.es.js",
   "files": [
-    "dist/**/*"
+    "dist"
   ],
   "exports": {
     ".": {
