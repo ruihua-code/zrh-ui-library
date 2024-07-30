@@ -11,6 +11,7 @@
     },
     "./dist/index.css": "./dist/index.css"
   },
+  "style": "dist/index.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
