@@ -1,6 +1,6 @@
 {
   "name": "zrh-ui-library",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "module",
   "main": "./dist/zrh-ui-library.es.js",
   "files": [
