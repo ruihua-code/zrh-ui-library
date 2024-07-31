@@ -30,10 +30,17 @@ import 'zrh-ui-library/dist/index.css'
 ```js
 import { ZrhButton, ZrhLabel } from 'zrh-ui-library'
 
-;<template>
+<template>
   <div>
     <ZrhButton label="zrh"></ZrhButton>
     <ZrhLabel label="hua"></ZrhLabel>
   </div>
 </template>
+```
+
+- 全局注册所有组件
+```js
+// main.js
+import { install } from 'zrh-ui-library'
+install(app)
 ```
