@@ -1,6 +1,6 @@
 {
   "name": "zrh-ui-library",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "type": "module",
   "main": "./dist/zrh-ui-library.es.js",
   "files": [
@@ -11,6 +11,7 @@
       "import": "./dist/zrh-ui-library.es.js"
     }
   },
+  "style": "./dist/index.css",
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build",
