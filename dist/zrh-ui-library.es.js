@@ -1,12 +1,12 @@
-import { defineComponent as r, openBlock as o, createElementBlock as a, normalizeClass as p, toDisplayString as s } from "vue";
-const c = (t, e) => {
-  const n = t.__vccOpts || t;
-  for (const [l, _] of e)
-    n[l] = _;
-  return n;
-}, i = r({
+import { defineComponent as s, ref as p, resolveComponent as u, openBlock as r, createBlock as i, normalizeClass as d, withCtx as m, createTextVNode as b, toDisplayString as a, createElementBlock as f } from "vue";
+const l = (t, e) => {
+  const o = t.__vccOpts || t;
+  for (const [n, c] of e)
+    o[n] = c;
+  return o;
+}, h = s({
   name: "ZrhButton"
-}), u = /* @__PURE__ */ Object.assign(i, {
+}), g = /* @__PURE__ */ Object.assign(h, {
   props: {
     label: {
       type: String,
@@ -18,13 +18,25 @@ const c = (t, e) => {
     }
   },
   setup(t) {
-    return (e, n) => (o(), a("button", {
-      class: p(`zrh-button ${t.type}`)
-    }, s(t.label), 3));
+    const e = p("abc"), o = () => {
+      console.log(e.value);
+    };
+    return (n, c) => {
+      const _ = u("el-button");
+      return r(), i(_, {
+        class: d(`zrh-button ${t.type}`),
+        onClick: o
+      }, {
+        default: m(() => [
+          b(a(t.label), 1)
+        ]),
+        _: 1
+      }, 8, ["class"]);
+    };
   }
-}), b = /* @__PURE__ */ c(u, [["__scopeId", "data-v-4012a248"]]), d = { class: "zrh-label" }, m = r({
+}), y = /* @__PURE__ */ l(g, [["__scopeId", "data-v-8dd79ee7"]]), v = { class: "zrh-label" }, x = s({
   name: "ZrhLabel"
-}), f = /* @__PURE__ */ Object.assign(m, {
+}), k = /* @__PURE__ */ Object.assign(x, {
   props: {
     label: {
       type: String,
@@ -32,15 +44,15 @@ const c = (t, e) => {
     }
   },
   setup(t) {
-    return (e, n) => (o(), a("div", d, s(t.label), 1));
+    return (e, o) => (r(), f("div", v, a(t.label), 1));
   }
-}), h = /* @__PURE__ */ c(f, [["__scopeId", "data-v-6556351b"]]), y = [b, h], v = (t) => {
-  y.forEach((e) => {
+}), B = /* @__PURE__ */ l(k, [["__scopeId", "data-v-5f376273"]]), C = [y, B], Z = (t) => {
+  C.forEach((e) => {
     t.component(e.name, e);
   });
 };
 export {
-  b as ZrhButton,
-  h as ZrhLabel,
-  v as install
+  y as ZrhButton,
+  B as ZrhLabel,
+  Z as install
 };

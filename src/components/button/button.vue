@@ -1,30 +1,40 @@
 <template>
-  <button :class="`zrh-button ${type}`">{{ label }}</button>
+  <el-button :class="`zrh-button ${type}`" @click="showMsg">
+    {{ label }}
+  </el-button>
 </template>
 
 <script setup name="ZrhButton">
+import { ref } from 'vue'
+
 defineProps({
   label: {
     type: String,
-    required: true,
+    required: true
   },
+
   type: {
     type: String,
-    default: 'primary',
-  },
-});
+    default: 'primary'
+  }
+})
+
+const msg = ref('abc')
+
+const showMsg = () => {
+  console.log(msg.value)
+}
 </script>
 
 <style lang="scss" scoped>
 .zrh-button {
   padding: 10px 20px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  cursor: pointer;
   font-size: 20px;
+  user-select: auto;
 }
-.ui-button.primary {
-  background-color: #007bff;
+
+.zrh-button.primary {
   color: white;
+  background-color: #007bff;
 }
 </style>

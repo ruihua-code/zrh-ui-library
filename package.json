@@ -1,6 +1,6 @@
 {
   "name": "zrh-ui-library",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "type": "module",
   "main": "./dist/zrh-ui-library.es.js",
   "files": [
@@ -12,21 +12,43 @@
     },
     "./dist/index.css": "./dist/index.css"
   },
-  "style": "./dist/index.css",
   "scripts": {
     "dev": "vite build --watch",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "version": "npm version patch",
-    "pub": "npm run publish"
+    "pub": "npm run publish",
+    "eslint": "npx eslint --cache -c eslint.config.js src",
+    "eslint:fix": "eslint --cache --fix -c eslint.config.js src",
+    "stylelint": "stylelint **/*.{scss,vue} --cache",
+    "stylelint:fix": "stylelint **/*.{scss,vue} --fix --cache"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.7.8"
   },
   "dependencies": {
+    "eslint": "^9.8.0",
     "vue": "^3.4.31"
   },
   "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
+    "postcss-html": "^1.7.0",
+    "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "scss": "^0.2.4",
+    "stylelint": "^16.8.1",
+    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.4.1",
     "vite": "^5.3.4",
     "vite-plugin-vue-setup-extend": "^0.4.0"
   }

@@ -7,13 +7,15 @@
 defineProps({
   label: {
     type: String,
-    required: true,
-  },
-});
+    required: true
+  }
+})
 </script>
 <style lang="scss" scoped>
 .zrh-label {
-  color: red;
+  width: 100px;
+  height: 60px;
   font-size: 20px;
+  color: red;
 }
 </style>

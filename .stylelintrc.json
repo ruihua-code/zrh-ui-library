@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "stylelint-config-standard-scss",
+        "stylelint-config-recess-order"
+    ],
+    "plugins": [
+        "stylelint-order",
+        "stylelint-scss"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "**/*.{vue,html}"
+            ],
+            "customSyntax": "postcss-html"
+        }
+    ],
+    "rules": {
+        "selector-class-pattern": null,
+        "selector-pseudo-class-no-unknown": [
+            true,
+            {
+                "ignorePseudoClasses": [
+                    "deep"
+                ]
+            }
+        ]
+    }
+}
