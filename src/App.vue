@@ -1,9 +1,10 @@
 <script setup>
-import Button from './components/button/button.vue';
+import ZrhButton from './components/button/button.vue';
+console.log('name:', ZrhButton.name);
 </script>
 
 <template>
   <div>
-    <Button label="aa" />
+    <ZrhButton label="aa"></ZrhButton>
   </div>
 </template>

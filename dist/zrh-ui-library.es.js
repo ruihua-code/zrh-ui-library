@@ -1,11 +1,12 @@
-import { openBlock as n, createElementBlock as o, normalizeClass as _, toDisplayString as a } from "vue";
+import { defineComponent as r, openBlock as o, createElementBlock as a, normalizeClass as p, toDisplayString as s } from "vue";
 const c = (t, e) => {
-  const r = t.__vccOpts || t;
-  for (const [s, l] of e)
-    r[s] = l;
-  return r;
-}, p = {
-  __name: "button",
+  const n = t.__vccOpts || t;
+  for (const [l, _] of e)
+    n[l] = _;
+  return n;
+}, i = r({
+  name: "ZrhButton"
+}), u = /* @__PURE__ */ Object.assign(i, {
   props: {
     label: {
       type: String,
@@ -17,12 +18,13 @@ const c = (t, e) => {
     }
   },
   setup(t) {
-    return (e, r) => (n(), o("button", {
-      class: _(`ui-button ${t.type}`)
-    }, a(t.label), 3));
+    return (e, n) => (o(), a("button", {
+      class: p(`zrh-button ${t.type}`)
+    }, s(t.label), 3));
   }
-}, u = /* @__PURE__ */ c(p, [["__scopeId", "data-v-69e51da6"]]), i = { class: "zrh-label" }, b = {
-  __name: "label",
+}), b = /* @__PURE__ */ c(u, [["__scopeId", "data-v-4012a248"]]), d = { class: "zrh-label" }, m = r({
+  name: "ZrhLabel"
+}), f = /* @__PURE__ */ Object.assign(m, {
   props: {
     label: {
       type: String,
@@ -30,15 +32,15 @@ const c = (t, e) => {
     }
   },
   setup(t) {
-    return (e, r) => (n(), o("div", i, a(t.label), 1));
+    return (e, n) => (o(), a("div", d, s(t.label), 1));
   }
-}, d = /* @__PURE__ */ c(b, [["__scopeId", "data-v-c6bc881d"]]), m = [u, d], f = (t) => {
-  m.forEach((e) => {
+}), h = /* @__PURE__ */ c(f, [["__scopeId", "data-v-6556351b"]]), y = [b, h], v = (t) => {
+  y.forEach((e) => {
     t.component(e.name, e);
   });
 };
 export {
-  u as ZrhButton,
-  d as ZrhLabel,
-  f as install
+  b as ZrhButton,
+  h as ZrhLabel,
+  v as install
 };

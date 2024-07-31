@@ -1,5 +1,5 @@
 <template>
-  <button :class="`ui-button ${type}`">{{ label }}</button>
+  <button :class="`zrh-button ${type}`">{{ label }}</button>
 </template>
 
 <script setup name="ZrhButton">
@@ -16,11 +16,12 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-.ui-button {
+.zrh-button {
   padding: 10px 20px;
   border: 1px solid #ccc;
   background-color: #fff;
   cursor: pointer;
+  font-size: 20px;
 }
 .ui-button.primary {
   background-color: #007bff;

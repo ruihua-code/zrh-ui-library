@@ -3,7 +3,7 @@
     {{ label }}
   </div>
 </template>
-<script setup>
+<script setup name="ZrhLabel">
 defineProps({
   label: {
     type: String,
@@ -13,7 +13,7 @@ defineProps({
 </script>
 <style lang="scss" scoped>
 .zrh-label {
-  color: orange;
+  color: red;
   font-size: 20px;
 }
 </style>
